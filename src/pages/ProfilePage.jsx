@@ -17,12 +17,12 @@ let ProfilePage = () => {
             let json = await response.json();
             console.log("Location data not available. Fetching data...")
             setUser(json);
-          }
+        }
 
         if(!location.state) {
             fetchData();
         }
-        
+
     },[])
 
     return(
