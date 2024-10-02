@@ -29,8 +29,9 @@ let ProfilePage = () => {
         <>
             <Navigation/>
             <h2>Profile - Id: {params.id}</h2>
-            <h3>{location.state ? location.state.username : user?.username}</h3>
-            
+            <h3>User name:{location.state ? location.state.username : user?.username}</h3>
+            <h3>Name: {location.state ? location.state.name : user?.name}</h3>
+            <h3>Email: {location.state ? location.state.email : user?.email}</h3>
         </>
     )
 }
